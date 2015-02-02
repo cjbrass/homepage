@@ -29,6 +29,17 @@
 
 <body>
 
+<div id="nav-bar-container">
+    <div id="nav-bar">
+        <div id="nav">
+            <span class="nav-button active" data-panel-num="0">Page 1</span>
+            <span class="nav-button" data-panel-num="1">Page 2</span>
+            <span class="nav-button" data-panel-num="2">Page 3</span>
+        </div>
+        <div id="bottom-slant"></div>
+    </div>
+
+</div>
 <div id="right-arrow" class="arrow"></div>
 <div id="left-arrow" class="arrow"></div>
 
