@@ -31,8 +31,6 @@
 
 <div id="right-arrow" class="arrow"></div>
 <div id="left-arrow" class="arrow"></div>
-<div id="up-arrow" class="arrow"></div>
-<div id="down-arrow" class="arrow"></div>
 
 <div style=" position: relative; width: 100%; min-height: 100vh; z-index: -5">
     <div id="slide-0-0" class="slide">
@@ -56,7 +54,7 @@
     <div id="slide-1-0" class="slide">
         <div class="slide-content">
             <?php
-            for ($i = 0; $i < 40; $i++){
+            for ($i = 0; $i < 15; $i++){
                 echo "<p>Line $i</p>";
             }
             ?>
@@ -95,12 +93,13 @@
             scrollLeft();
         });
 
-        $('#down-arrow').click(function(){
-            scrollDown();
-        });
-
-        $('#up-arrow').click(function(){
-            scrollUp();
+        $(window).bind('mousewheel DOMMouseScroll', function(event){
+            if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
+                scrollUp();
+            }
+            else {
+                scrollDown();
+            }
         });
 
         $(document).keydown(function(e){
@@ -142,8 +141,7 @@
 
         var new_slide = '#slide-' + column_counter + "-"+row_counters[column_counter];
 
-        $(current_slide).hide('slide', {direction: 'left'}, 1000);
-        $(new_slide).show('slide', {direction: 'right'}, 1000);
+        changeSlide($(current_slide), $(new_slide), 'right');
     }
 
     function scrollLeft(){
@@ -160,8 +158,7 @@
 
         var new_slide = '#slide-' + column_counter + "-"+row_counters[column_counter];
 
-        $(current_slide).hide('slide', {direction: 'right'}, 1000);
-        $(new_slide).show('slide', {direction: 'left'}, 1000);
+        changeSlide($(current_slide), $(new_slide), 'left');
     }
 
     function scrollUp(){
@@ -172,15 +169,9 @@
         }
         column_counter --;
 
-        // used to allow scrolling "over" that would send it over the top row to the bottom
-//        if(column_counter < 0 ){
-//            column_counter = row_counters.length - 1;
-//        }
-
         var new_slide = '#slide-' + column_counter + "-"+row_counters[column_counter];
         displayArrows();
-        $(current_slide).hide('slide', {direction: 'down'}, 1000);
-        $(new_slide).show('slide', {direction: 'up'}, 1000);
+        changeSlide($(current_slide), $(new_slide), 'up');
     }
 
     function scrollDown(){
@@ -190,29 +181,35 @@
             return;
         }
         column_counter ++;
-//        if(column_counter >= row_counters.length){
-//            column_counter = 0;
-//        }
 
         var new_slide = '#slide-' + column_counter + "-"+row_counters[column_counter];
         displayArrows();
-        $(current_slide).hide('slide', {direction: 'up'}, 1000);
-        $(new_slide).show('slide', {direction: 'down'}, 1000);
+        changeSlide($(current_slide), $(new_slide), 'down');
+
+    }
+
+    function changeSlide($current_slide, $new_slide, direction_show){
+        var direction_hide;
+        switch (direction_show){
+            case 'down':
+                direction_hide = 'up';
+                break;
+            case 'up':
+                direction_hide = 'down';
+                break;
+            case 'left':
+                direction_hide = 'right';
+                break;
+            case 'right':
+                direction_hide = 'left';
+                break;
+        }
+
+        $current_slide.hide('slide', {direction: direction_hide}, 1000);
+        $new_slide.show('slide', {direction: direction_show}, 1000);
     }
 
     function displayArrows(){
-        if(column_counter <= 0){
-            $('#up-arrow').hide();
-        }else{
-            $('#up-arrow').show();
-        }
-
-        if(column_counter >= row_counters.length -1 ){
-            $('#down-arrow').hide();
-        }else{
-            $('#down-arrow').show();
-        }
-
         if(row_maxs[column_counter] == 0){
             $('#left-arrow').hide();
             $('#right-arrow').hide();

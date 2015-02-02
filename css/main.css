@@ -33,34 +33,18 @@ body{
 
 
 #right-arrow{
-    background: url("../images/arrow-right.png") no-repeat center;
+    background: url("../images/right_arrow.png") no-repeat center;
     width: 50px;
     z-index: 1;
     right: 0;
     height: 100vh;
 }
 #left-arrow{
-    background: url("../images/arrow-left.png") no-repeat center;
+    background: url("../images/left_arrow.png") no-repeat center;
     width: 50px;
     z-index: 1;
     left: 0;
     height: 100vh;
-}
-#up-arrow{
-    /*initially this is not shown*/
-    display: none;
-    background: url("../images/arrow-up.png") no-repeat center;
-    height: 50px;
-    width: 100%;
-    z-index: 2;
-    top: 0;
-}
-#down-arrow{
-    background: url("../images/arrow-down.png") no-repeat center;
-    height: 50px;
-    width: 100%;
-    z-index: 2;
-    bottom: 0;
 }
 
 /*slide specific stuff*/
