@@ -160,6 +160,12 @@ function changeSlide($current_slide, $new_slide, direction_show){
 function changeNav(column_num){
     $('.nav-button').removeClass('active');
     $('.nav-button[data-panel-num="'+column_num+'"]').addClass('active');
+    changeBackground(column_num);
+}
+
+function changeBackground(column_num){
+    var color = row_colours[column_num];
+    $('body').animate({backgroundColor: color}, 1000);
 }
 
 function displayArrows(){
