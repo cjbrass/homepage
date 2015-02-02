@@ -1,6 +1,6 @@
 var column_counter = 0;
 var row_counters = [0,0,0];
-var row_maxs = [2,1,0];
+var row_maxs = [0,1,0];
 var scrolling_allowed = true;
 var row_colours = ['#ffffff', '#ff0000', '#00ff00'];
 
@@ -32,6 +32,7 @@ $(document).ready(function(){
         column_counter = next_slide_column;
         $('.nav-button').removeClass('active');
         $this.addClass('active');
+        displayArrows();
         changeSlide($(current_slide), $(new_slide), direction);
     });
 

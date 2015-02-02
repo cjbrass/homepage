@@ -19,25 +19,49 @@ body{
 .slide .slide-content{
     padding: 50px;
 }
-
 .arrow{
     position: absolute;
     cursor: pointer;
-    /*opacity: 0;*/
-}
-
-.arrow:hover{
-    /*opacity: 1;*/
 }
 
 
 
+/* nav related items*/
+#nav-bar-container{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+#nav-bar{
+    display: inline-block;
+    width: 500px;
+}
+#nav{
+    background-color: gray;
+}
+#bottom-slant{
+    border-top: 14px solid gray;
+    border-right: 25px solid transparent;
+    border-left: 25px solid transparent;
+}
+.nav-button{
+    cursor: pointer;
+    color: #ffffff;
+}
+.nav-button.active{
+    color: #1c94c4;
+    font-weight: bold;
+}
+.nav-button.no-hover{
+    cursor: default;
+}
 #right-arrow{
     background: url("../images/right_arrow.png") no-repeat center;
     width: 50px;
     z-index: 1;
     right: 0;
     height: 100vh;
+    display: none;
 }
 #left-arrow{
     background: url("../images/left_arrow.png") no-repeat center;
@@ -45,6 +69,7 @@ body{
     z-index: 1;
     left: 0;
     height: 100vh;
+    display: none;
 }
 
 /*slide specific stuff*/
@@ -58,23 +83,6 @@ body{
     position: absolute;
 }
 #slide-0-0 {
-    /*position: fixed;*/
-    height: 100vh;
-    width: 100%;
-    background-image: url('../images/background.jpg');
-    background-size: 100%;
-    z-index: -2;
-}
-#slide-0-1 {
-    /*position: fixed;*/
-    height: 100vh;
-    width: 100%;
-    background-image: url('../images/background.jpg');
-    background-size: 100%;
-    z-index: -2;
-}
-#slide-0-2 {
-    /*position: fixed;*/
     height: 100vh;
     width: 100%;
     background-image: url('../images/background.jpg');

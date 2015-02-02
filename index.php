@@ -51,17 +51,7 @@
         <div class="slide-content">
         </div>
     </div>
-    <div id="slide-0-1" class="slide">
 
-        <div class="slide-content">
-            slide0-1
-        </div>
-    </div>
-    <div id="slide-0-2" class="slide">
-        <div class="slide-content">
-            slide0-2
-        </div>
-    </div>
     <div id="slide-1-0" class="slide">
         <div class="slide-content">
             <?php
