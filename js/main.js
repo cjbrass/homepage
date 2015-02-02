@@ -30,9 +30,8 @@ $(document).ready(function(){
             direction = 'down';
         }
         column_counter = next_slide_column;
-        $('.nav-button').removeClass('active');
-        $this.addClass('active');
         displayArrows();
+        changeNav(next_slide_column);
         changeSlide($(current_slide), $(new_slide), direction);
     });
 
@@ -114,6 +113,7 @@ function scrollUp(){
 
     var new_slide = '#slide-' + column_counter + "-"+row_counters[column_counter];
     displayArrows();
+    changeNav(column_counter);
     changeSlide($(current_slide), $(new_slide), 'up');
 }
 
@@ -127,6 +127,7 @@ function scrollDown(){
 
     var new_slide = '#slide-' + column_counter + "-"+row_counters[column_counter];
     displayArrows();
+    changeNav(column_counter);
     changeSlide($(current_slide), $(new_slide), 'down');
 
 }
@@ -155,6 +156,10 @@ function changeSlide($current_slide, $new_slide, direction_show){
     }, 1000);
     $current_slide.hide('slide', {direction: direction_hide}, 1000);
     $new_slide.show('slide', {direction: direction_show}, 1000);
+}
+function changeNav(column_num){
+    $('.nav-button').removeClass('active');
+    $('.nav-button[data-panel-num="'+column_num+'"]').addClass('active');
 }
 
 function displayArrows(){
