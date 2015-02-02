@@ -1,3 +1,6 @@
+// these variables combine to make the "data structure" that manages the scrolling.
+// Could probably throw them all into a single object, but for now this will work.
+// Currently you have to define all these, may look into automating that in the future
 var column_counter = 0;
 var row_counters = [0,0,0];
 var row_maxs = [0,1,0];
@@ -16,9 +19,12 @@ $(document).ready(function(){
         scrollLeft();
     });
 
+    // the nav bar at the top gives us the option to skip to any row
     $('.nav-button').click(function(){
         var $this = $(this);
         var next_slide_column = $this.data('panelNum');
+        // make sure that the new slide column is not the current slide, that the previous action has finished,
+        // and (just in case the user tried to modify the html) that it is a valid row number
         if(next_slide_column < 0 || next_slide_column >= row_counters.length || next_slide_column == column_counter || !scrolling_allowed){
             return;
         }
@@ -35,6 +41,7 @@ $(document).ready(function(){
         changeSlide($(current_slide), $(new_slide), direction);
     });
 
+    // on wheel up and wheel down events, we want to scroll up/down
     $(window).bind('mousewheel DOMMouseScroll', function(event){
         if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
             scrollUp();
@@ -44,6 +51,7 @@ $(document).ready(function(){
         }
     });
 
+    // want the user to be able to change slides with the arrow keys
     $(document).keydown(function(e){
         switch(e.which) {
             case 37: // left
@@ -132,6 +140,7 @@ function scrollDown(){
 
 }
 
+// this function handles all change of slide actions
 function changeSlide($current_slide, $new_slide, direction_show){
     var direction_hide;
     switch (direction_show){
@@ -150,6 +159,7 @@ function changeSlide($current_slide, $new_slide, direction_show){
     }
     scrolling_allowed = false;
     $('.nav-button').addClass('no-hover');
+    // set a timeout to allow the animations to finish. during this time, no new scrolling actions may take place
     window.setTimeout(function(){
         scrolling_allowed = true;
         $('.nav-button').removeClass('no-hover');
@@ -157,6 +167,7 @@ function changeSlide($current_slide, $new_slide, direction_show){
     $current_slide.hide('slide', {direction: direction_hide}, 1000);
     $new_slide.show('slide', {direction: direction_show}, 1000);
 }
+
 function changeNav(column_num){
     $('.nav-button').removeClass('active');
     $('.nav-button[data-panel-num="'+column_num+'"]').addClass('active');
@@ -168,6 +179,7 @@ function changeBackground(column_num){
     $('body').animate({backgroundColor: color}, 1000);
 }
 
+// if a row has multiple options, we want to show a left and right arrow. Otherwise, we do not want them visible
 function displayArrows(){
     if(row_maxs[column_counter] == 0){
         $('#left-arrow').hide();
