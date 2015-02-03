@@ -2,10 +2,10 @@
 // Could probably throw them all into a single object, but for now this will work.
 // Currently you have to define all these, may look into automating that in the future
 var column_counter = 0;
-var row_counters = [0,0,0];
-var row_maxs = [0,1,0];
+var row_counters = [0,0,0,0,0];
+var row_maxs = [0,0,3,0,7];
 var scrolling_allowed = true;
-var row_colours = ['#ffffff', '#ff0000', '#00ff00'];
+var row_colours = ['#FFFFFF','#FFFFFF', '#AFEEEE', '#98FB98','#D3D3D3'];
 
 $(document).ready(function(){
 
@@ -39,6 +39,16 @@ $(document).ready(function(){
         displayArrows();
         changeNav(next_slide_column);
         changeSlide($(current_slide), $(new_slide), direction);
+    });
+
+    var sports_list = ['football', 'basketball', 'soccer', 'volleyball','baseball', 'cricket', 'ping-pong', 'cliff diving', 'Mongolian leg wrestling'];
+    var sports_index = 0;
+    $('#sports').click(function(){
+        $(this).text(sports_list[sports_index]);
+        sports_index ++;
+        if(sports_index >= sports_list.length){
+            sports_index = 0;
+        }
     });
 
     // on wheel up and wheel down events, we want to scroll up/down
