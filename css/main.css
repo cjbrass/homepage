@@ -10,7 +10,7 @@ body{
     margin: 0;
     position: relative;
 }
-p, ul, li{
+p, ul, li, div{
     line-height: 1.2;
 }
 
@@ -36,6 +36,7 @@ p, ul, li{
 
 /* nav related items*/
 #nav-bar-container{
+    display: none;
     z-index: 5;
     position: absolute;
     width: 100%;
@@ -115,4 +116,50 @@ p, ul, li{
 }
 #sports{
     cursor: pointer;
+}
+
+#mobile-button, #desktop-button{
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 4px;
+}
+#mobile-button{
+    background-color: teal;
+}
+#desktop-button{
+    background-color: green;
+}
+
+/*mobile stuff*/
+@media screen and (max-width: 1024px){
+
+    body{
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .slide .slide-content{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+
+@media screen and (max-width: 450px){
+    .about-image{
+        max-height: 200px;
+        max-width: 280px;
+    }
+}
+/*For more vertical Displays*/
+@media screen and (max-aspect-ratio: 960/720){
+    #slide-0-0 {
+        background-image: url('../images/vertical-background.jpg');
+    }
+}
+@media screen and (max-aspect-ratio: 432/640){
+    #slide-0-0 {
+        background-image: url('../images/very-vertical-background.png');
+    }
 }
