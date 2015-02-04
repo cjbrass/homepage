@@ -50,23 +50,7 @@
 <div style=" position: relative; width: 100%; min-height: 100vh;">
     <div id="mobile-slide" class="slide">
         <div class="slide-content">
-
-            <div style="text-align: center">
-                <p>
-                    Noticed you are using a smaller screen, possibly on a mobile device. Would you like to view this as the desktop version, or mobile version?
-                </p>
-                <p style="margin-top: 30px; margin-bottom: 30px;">
-                    <span id="mobile-button" onclick="mobileMode()">Mobile</span> <span id="desktop-button" onclick="desktopMode()">Desktop</span>
-                </p>
-                <p>
-                    This page is best viewed on desktops (or at least tablets), however it should still work on mobile platforms.
-                    The mobile option will just layout the whole page and you can scroll through it.
-                    The Desktop version will behave as normal, however due to the smaller screen size and use of touchscreens, all the features may not work as intended.
-                    If you want to change what version you see, you can always just refresh the page
-                </p>
-
-
-            </div>
+            Noticed you are on mobile, would you like to view this as the desktop version, or mobile version?
         </div>
     </div>
 
