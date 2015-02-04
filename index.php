@@ -13,6 +13,8 @@
 <!--so apologies if you are unable to view this correctly in IE8, or something similar-->
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, user-scalable=yes" />
+
     <script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
     <script src="js/jquery-color-plugin.js" type="text/javascript"></script>
     <script src="js/jquery_ui/jquery-ui-1.11.1/jquery-ui.js" type="text/javascript"></script>
@@ -46,6 +48,12 @@
 <div id="left-arrow" class="arrow"></div>
 
 <div style=" position: relative; width: 100%; min-height: 100vh;">
+    <div id="mobile-slide" class="slide">
+        <div class="slide-content">
+            Noticed you are on mobile, would you like to view this as the desktop version, or mobile version?
+        </div>
+    </div>
+
     <div id="slide-0-0" class="slide">
         <div class="slide-shader"></div>
         <div class="slide-content">
