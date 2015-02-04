@@ -23,16 +23,12 @@ function smallWindowCheck(){
 }
 
 $(document).ready(function(){
-
-
     var is_mobile = window.mobilecheck();
     if(is_mobile){
         $('#mobile-slide').show();
     }else{
         desktopMode();
     }
-
-
 });
 
 function scrollRight(){
@@ -230,8 +226,6 @@ function desktopMode(){
 }
 
 function mobileMode(){
-
-
     $('.slide').css({display:'block', position:'relative'});
     $('#mobile-slide').hide();
 }

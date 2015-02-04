@@ -72,7 +72,8 @@
 
     <div id="slide-0-0" class="slide">
         <div class="slide-shader"></div>
-        <div class="slide-content">
+        <div class="slide-content" style="text-align: center">
+            <p style="font-weight: bold; font-size: 56px; color: white;">WELCOME</p>
         </div>
     </div>
 
@@ -133,24 +134,94 @@
     </div>
     <div id="slide-2-1" class="slide">
         <div class="slide-content">
-            <p class="sub-title">
+            <p class="sub-title" style="margin-bottom: 0">
                 Sentis Research
             </p>
+            <p style="margin-top: 0; text-align: center;">April 2014 - Feb 2015</p>
+            <p>
+                Sentis is a market research company, handling both the data gathering (surveys) and the data presentation (web portals).
+                My role in the company is to build the portals. This is done primarily using PHP, MySQL and javascript, using Smarty framework.
+                (<a href="http://sentisresearch.com/" target="_blank">sentisresearch.com</a>)
+
+            </p>
+            <ul>
+                <li>
+                    I handle everything from the management of the data in the back end, to ensuring the portal is looking the way we want.
+                </li>
+                <li>
+                    We work on several projects at once, with tight deadlines. This forces us to be efficient, as well as able to identify what the essentials are that need to be done.
+                </li>
+                <li>
+                    Smaller projects are handled beginning to end by myself, while the larger ones are worked on in teams of two.
+                </li>
+                <li>
+                    Manage and build our codebase over time, adding new features and removing old ones. Every job is a custom one, but we always build up from the current core codebase.
+                </li>
+                <li>
+                    Being part of such a small team means that my impact is always noticeable. It also has me accustomed to more responsibilities than would have likely been placed on me at a larger company.
+                </li>
+                <li>
+                    The work I do is mostly self motivated, self managed, and self taught.
+                </li>
+            </ul>
 
         </div>
     </div>
     <div id="slide-2-2" class="slide">
         <div class="slide-content">
-            <p class="sub-title">
-                Stage 3
+            <p class="sub-title" style="margin-bottom: 0">
+                Stage 3 Systems
             </p>
+            <p style="margin-top: 0; text-align: center;">September 2013 - March 2014</p>
 
+            <p>
+                Stage 3 Systems builds high availability web based software services for the international shipping industry.
+                I worked on a variety of projects in QA and as a programmer focused on their Aquila vessel construction service.
+                I specialized in front end javascript programming, server side PHP programming, and business intelligence (<a href="http://stage3systems.com/aquila.html" target="_blank">stage3systems.com/aquila.html</a>).
+            </p>
+            <ul>
+                <li>
+                    Began working as a QA Analyst to help with a backlog of work. Worked on functional and automated testing plans to verify customer acceptance and stability using Selenium/Capybara in Ruby
+                </li>
+                <li>
+                    Moved quickly into a programming position as one of two key developers on Aquila. Tool set was Yii (PHP with MySQL) and Backbone (javascript)
+                </li>
+                <li>
+                    Experimented with using Raspberry Pi as a suitable display driver for our data visualization kiosks we were producing for customers - research led to a decision and recommendation that this was not the right tool for the job. I was able to summarize the pros and cons and present alternatives to Management.
+                </li>
+                <li>
+                    Worked as part of a team on the Aquila project involving a lead engineer, designer, QA, and customer support. Experienced at self organizing my time to support their priorities to deliver to the client on time.
+                </li>
+                <li>
+                    Worked extensively with GitHub, Atlassian JIRA, PHP Storm, HipChat, Slack
+                </li>
+                <li>
+                    Enjoyed the entrepreneurial yet business minded environment of the company. Participated and contributed to strategy and planning discussions. Would like to have stayed at Stage 3 but the business did a head count reduction as part of another project scaling back. I’ve supported them closely through the transition.
+                </li>
+            </ul>
         </div>
     </div>
     <div id="slide-2-3" class="slide">
         <div class="slide-content">
             <p class="sub-title">
                 University of British Columbia
+            </p>
+            <p>
+                When I first went to UBC, I had plans of becoming a great physicist. However, after a class scheduling mishap
+                in my second term, I found myself in Computer Science 101. Having never done any coding before, I was surprised
+                how easily I picked it up, and how much I enjoyed it. I eventually changed
+                my major into a combined Computer Science and Physics degree, and was able to learn a great deal in both subjects.
+            </p>
+            <p>
+                Another big part of my time at UBC was playing football. I was on the varsity team for 3 years, and helped
+                with film work for 1. While playing, I was able to get my grades high enough to become and Academic All-Canadian,
+                which basically meant I played a varsity sport while maintaining an A average.
+            </p>
+            <p>
+                My biggest mistake at UBC was not taking advantage their co-op program. During my time on the football team
+                it was simply not an option. When I was done with football, I foolishly focused more on simply graduating, instead
+                of gaining work experience to help land a job when I did graduate. Fortunately the lack of experience had
+                an easy remedy (just get some experience), however I can still notice the effects early on in my career.
             </p>
 
         </div>
@@ -165,16 +236,16 @@
                 You can find links to the github repositories here, and sometimes a working version.
             </p>
             <p>
-                <a href="https://github.com/cjbrass/Sandbox">The Sandbox</a> This is where I will do my best to place my waste of time projects. Things
+                <a class="project-link" href="https://github.com/cjbrass/Sandbox" target="_blank">The Sandbox:</a> This is where I will do my best to place my waste of time projects. Things
                 like best practices and coding standards will rarely be followed, and the projects will likely never be polished, if ever finished.
             </p>
             <p>
-                <a href="https://github.com/cjbrass/homepage">This page</a> Want to see what is under the hood for this page? Technically you already have access to everything,
+                <a class="project-link" href="https://github.com/cjbrass/homepage" target="_blank">This page:</a> Want to see what is under the hood for this page? Technically you already have access to everything,
                 since its all client side, but hey, here is a nice repo link for you.
             </p>
             <p>
-                <a href="https://www.youtube.com/watch?v=NhHrw-t3mwk">Sound finding car</a> and
-                <a href="https://www.youtube.com/watch?v=lNB6J7EirZc">a wave animator</a>
+                <a class="project-link" href="https://www.youtube.com/watch?v=NhHrw-t3mwk" target="_blank">Sound finding car</a> and
+                <a class="project-link" href="https://www.youtube.com/watch?v=lNB6J7EirZc" target="_blank">a wave animator:</a>
                 A few of my more memorable projects from university.
                 The source code for them is either lost, or far too trivial to be worth posting, but the results are interesting.
 
