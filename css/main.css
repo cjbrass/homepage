@@ -1,10 +1,14 @@
 @font-face {
-    font-family: 'raavi';
-    src: url(fonts/raavi.ttf);
+    font-family: 'corbel';
+    src: url(fonts/Corbel_11902.ttf);
+}
+@font-face {
+    font-family: 'orator';
+    src: url(fonts/OratorStd-Slanted.otf);
 }
 
 body{
-    font-family: 'raavi';
+    font-family: 'corbel';
     background-color: #ffffff;
     font-size: 20px;
     margin: 0;
@@ -25,11 +29,18 @@ p, ul, li, div{
     min-width: 100%;
     min-height: 100vh;
 }
+.slide .slide-container{
+    margin: 0 80px;
+    background-color: #D3D3D3;
+    position: relative;
+    min-height: 100vh;
+}
 .slide .slide-content{
-    padding: 50px 80px;
+    padding: 50px 0;
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
 }
 .arrow{
     position: absolute;
@@ -39,6 +50,15 @@ p, ul, li, div{
 
 
 /* nav related items*/
+#black-bar{
+    position: fixed;
+    width: 100%;
+    height: 30px;
+    background-color: #000000;
+    z-index: 10;
+    bottom: 20px;
+    text-align: center;
+}
 #main-nav-bar-container{
     display: none;
     z-index: 5;
@@ -47,11 +67,12 @@ p, ul, li, div{
     text-align: center;
 }
 .nav-bar{
+    font-family: 'orator';
     display: inline-block;
     width: 500px;
 }
 .nav{
-    background-color: gray;
+    background-color: #ffffff;
 }
 .mobile-nav-container{
     display: none;
@@ -67,7 +88,7 @@ p, ul, li, div{
 }
 .nav-button{
     cursor: pointer;
-    color: #ffffff;
+    color: #000000;
     padding-right: 3px;
     padding-left: 3px;
 }
@@ -97,10 +118,16 @@ p, ul, li, div{
     height: 100vh;
     display: none;
 }
+#up-arrow, #down-arrow{
+    cursor: pointer;
+    padding: 5px;
+    height: 20px;
+    display: none;
+}
 
 /*slide specific stuff*/
 .slide-shader{
-    z-index: 0;
+    z-index: 4;
     background-color: #ffffff;
     opacity: .35;
     min-height: 100vh;
@@ -108,12 +135,14 @@ p, ul, li, div{
     width: 100%;
     position: absolute;
 }
-#slide-0-0 {
+#welcome-slide {
     height: 100vh;
+    min-height: 100%;
     width: 100%;
     background-image: url('../images/background.jpg');
     background-size: 100%;
-    z-index: -2;
+    z-index: 1;
+    position: relative;
 }
 
 .sub-title{

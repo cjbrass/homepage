@@ -32,23 +32,38 @@ $(document).ready(function(){
 });
 
 function scrollRight(){
-    if(row_maxs[column_counter] == 0 || !scrolling_allowed){
-        return;
-    }
+
 
     var current_slide = '#slide-' + column_counter + "-"+row_counters[column_counter];
 
-    row_counters[column_counter] ++;
-    if(row_counters[column_counter] > row_maxs[column_counter]){
-        row_counters[column_counter] = 0;
+    if(column_counter >= row_counters.length -1 || !scrolling_allowed){
+        return;
     }
+    column_counter ++;
 
     var new_slide = '#slide-' + column_counter + "-"+row_counters[column_counter];
-
+    displayArrows();
+    changeNav(column_counter);
     changeSlide($(current_slide), $(new_slide), 'right');
+
 }
 
 function scrollLeft(){
+    var current_slide = '#slide-' + column_counter + "-"+row_counters[column_counter];
+
+    if(column_counter <= 0 || !scrolling_allowed){
+        return;
+    }
+    column_counter --;
+
+    var new_slide = '#slide-' + column_counter + "-"+row_counters[column_counter];
+    displayArrows();
+    changeNav(column_counter);
+    changeSlide($(current_slide), $(new_slide), 'left');
+
+}
+
+function scrollUp(){
     if(row_maxs[column_counter] == 0 || !scrolling_allowed){
         return;
     }
@@ -62,34 +77,23 @@ function scrollLeft(){
 
     var new_slide = '#slide-' + column_counter + "-"+row_counters[column_counter];
 
-    changeSlide($(current_slide), $(new_slide), 'left');
-}
-
-function scrollUp(){
-    var current_slide = '#slide-' + column_counter + "-"+row_counters[column_counter];
-
-    if(column_counter <= 0 || !scrolling_allowed){
-        return;
-    }
-    column_counter --;
-
-    var new_slide = '#slide-' + column_counter + "-"+row_counters[column_counter];
-    displayArrows();
-    changeNav(column_counter);
     changeSlide($(current_slide), $(new_slide), 'up');
 }
 
 function scrollDown(){
-    var current_slide = '#slide-' + column_counter + "-"+row_counters[column_counter];
-
-    if(column_counter >= row_counters.length -1 || !scrolling_allowed){
+    if(row_maxs[column_counter] == 0 || !scrolling_allowed){
         return;
     }
-    column_counter ++;
+
+    var current_slide = '#slide-' + column_counter + "-"+row_counters[column_counter];
+
+    row_counters[column_counter] ++;
+    if(row_counters[column_counter] > row_maxs[column_counter]){
+        row_counters[column_counter] = 0;
+    }
 
     var new_slide = '#slide-' + column_counter + "-"+row_counters[column_counter];
-    displayArrows();
-    changeNav(column_counter);
+
     changeSlide($(current_slide), $(new_slide), 'down');
 
 }
@@ -125,22 +129,22 @@ function changeSlide($current_slide, $new_slide, direction_show){
 function changeNav(column_num){
     $('.nav-button').removeClass('active');
     $('.nav-button[data-panel-num="'+column_num+'"]').addClass('active');
-    changeBackground(column_num);
+    //changeBackground(column_num);
 }
 
-function changeBackground(column_num){
-    var color = row_colours[column_num];
-    $('body').animate({backgroundColor: color}, 1000);
-}
+//function changeBackground(column_num){
+//    var color = row_colours[column_num];
+//    $('body').animate({backgroundColor: color}, 1000);
+//}
 
 // if a row has multiple options, we want to show a left and right arrow. Otherwise, we do not want them visible
 function displayArrows(){
     if(row_maxs[column_counter] == 0){
-        $('#left-arrow').hide();
-        $('#right-arrow').hide();
+        $('#up-arrow').hide();
+        $('#down-arrow').hide();
     }else{
-        $('#left-arrow').show();
-        $('#right-arrow').show();
+        $('#up-arrow').show();
+        $('#down-arrow').show();
     }
 }
 
@@ -148,6 +152,8 @@ function desktopMode(){
 
     $('#mobile-slide').hide();
     $('#main-nav-bar-container').show();
+    $('#right-arrow').show();
+    $('#left-arrow').show();
     $('#slide-0-0').show();
 
     $('#right-arrow').click(function(){
@@ -156,6 +162,12 @@ function desktopMode(){
 
     $('#left-arrow').click(function(){
         scrollLeft();
+    });
+    $('#down-arrow').click(function(){
+        scrollDown();
+    });
+    $('#up-arrow').click(function(){
+        scrollUp();
     });
 
     // the nav bar at the top gives us the option to skip to any row
@@ -170,9 +182,9 @@ function desktopMode(){
 
         var current_slide = '#slide-' + column_counter + "-"+row_counters[column_counter];
         var new_slide = '#slide-' + next_slide_column + "-"+row_counters[next_slide_column];
-        var direction = 'up';
+        var direction = 'left';
         if(column_counter < next_slide_column) {
-            direction = 'down';
+            direction = 'right';
         }
         column_counter = next_slide_column;
         displayArrows();
@@ -193,10 +205,10 @@ function desktopMode(){
     // on wheel up and wheel down events, we want to scroll up/down
     $(window).bind('mousewheel DOMMouseScroll', function(event){
         if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
-            scrollUp();
+            scrollLeft();
         }
         else {
-            scrollDown();
+            scrollRight();
         }
     });
 
