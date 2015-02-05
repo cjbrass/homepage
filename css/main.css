@@ -39,21 +39,28 @@ p, ul, li, div{
 
 
 /* nav related items*/
-#nav-bar-container{
+#main-nav-bar-container{
     display: none;
     z-index: 5;
     position: absolute;
     width: 100%;
     text-align: center;
 }
-#nav-bar{
+.nav-bar{
     display: inline-block;
     width: 500px;
 }
-#nav{
+.nav{
     background-color: gray;
 }
-#bottom-slant{
+.mobile-nav-container{
+    display: none;
+    width: 100%;
+    text-align: center;
+    z-index: 5;
+    position: absolute;
+}
+.bottom-slant{
     border-top: 14px solid gray;
     border-right: 25px solid transparent;
     border-left: 25px solid transparent;
@@ -63,6 +70,9 @@ p, ul, li, div{
     color: #ffffff;
     padding-right: 3px;
     padding-left: 3px;
+}
+.nav-button:hover{
+    color: #1c94c4;
 }
 .nav-button.active{
     color: #1c94c4;

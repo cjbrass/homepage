@@ -147,7 +147,7 @@ function displayArrows(){
 function desktopMode(){
 
     $('#mobile-slide').hide();
-    $('#nav-bar-container').show();
+    $('#main-nav-bar-container').show();
     $('#slide-0-0').show();
 
     $('#right-arrow').click(function(){
@@ -228,4 +228,5 @@ function desktopMode(){
 function mobileMode(){
     $('.slide').css({display:'block', position:'relative'});
     $('#mobile-slide').hide();
+    $('.mobile-nav-container').show();
 }

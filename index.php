@@ -31,23 +31,23 @@
 
 <body>
 
-<div id="nav-bar-container">
-    <div id="nav-bar">
-        <div id="nav">
-            <span class="nav-button active" data-panel-num="0">Welcome</span>
-            <span class="nav-button" data-panel-num="1">Home</span>
-            <span class="nav-button" data-panel-num="2">Work</span>
-            <span class="nav-button" data-panel-num="3">Projects</span>
-            <span class="nav-button" data-panel-num="4">About</span>
+<div id="main-nav-bar-container">
+    <div class="nav-bar">
+        <div class="nav">
+            <a class="nav-button active" data-panel-num="0">Welcome</a>
+            <a class="nav-button" data-panel-num="1">Home</a>
+            <a class="nav-button" data-panel-num="2">Work</a>
+            <a class="nav-button" data-panel-num="3">Projects</a>
+            <a class="nav-button" data-panel-num="4">About</a>
         </div>
-        <div id="bottom-slant"></div>
+        <div class="bottom-slant"></div>
     </div>
 
 </div>
 <div id="right-arrow" class="arrow"></div>
 <div id="left-arrow" class="arrow"></div>
 
-<div style=" position: relative; width: 100%; min-height: 100vh;">
+<div style=" position: relative; width: 100%; min-height: 100vh; z-index: 0;">
     <div id="mobile-slide" class="slide">
         <div class="slide-content">
 
@@ -71,6 +71,7 @@
     </div>
 
     <div id="slide-0-0" class="slide">
+        <?php $slide = 0; include('mobile_top_nav.php') ?>
         <div class="slide-shader"></div>
         <div class="slide-content" style="text-align: center">
             <p style="font-weight: bold; font-size: 56px; color: white;">WELCOME</p>
@@ -78,6 +79,7 @@
     </div>
 
     <div id="slide-1-0" class="slide">
+        <?php $slide = 1; include('mobile_top_nav.php') ?>
         <div class="slide-content">
             <p class="sub-title">
                 Hey! You found my website.
@@ -111,6 +113,7 @@
 
 
     <div id="slide-2-0" class="slide">
+        <?php $slide = 2; include('mobile_top_nav.php') ?>
         <div class="slide-content">
             <p class="sub-title">
                 Work Experience
@@ -227,6 +230,7 @@
         </div>
     </div>
     <div id="slide-3-0" class="slide">
+        <?php $slide = 3; include('mobile_top_nav.php') ?>
         <div class="slide-content">
             <p class="sub-title">
                 Personal Projects
@@ -254,6 +258,7 @@
         </div>
     </div>
     <div id="slide-4-0" class="slide">
+        <?php $slide = 4; include('mobile_top_nav.php') ?>
         <div class="slide-content">
             <p class="sub-title">
                 About Me
@@ -360,3 +365,5 @@
 </body>
 </html>
 
+<?php
+die();
