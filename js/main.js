@@ -5,7 +5,8 @@ var column_counter = 0;
 var row_counters = [0,0,0,0,0];
 var row_maxs = [0,0,3,0,7];
 var scrolling_allowed = true;
-var row_colours = ['#FFFFFF','#FFFFFF', '#AFEEEE', '#98FB98','#D3D3D3'];
+//var row_colours = ['#FFFFFF','#FFFFFF', '#AFEEEE', '#98FB98','#D3D3D3'];
+var row_colours = ['#FFFFFF','#FFFFFF', '#AFEEEE', '#A0FBA0','#D3D3D3'];
 
 //regex mobile check I found on stack exchange, added the small window check myself, may or may not use it
 window.mobilecheck = function() {

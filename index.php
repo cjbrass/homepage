@@ -67,8 +67,13 @@
     <div id="slide-0-0" class="slide">
         <?php $slide = 0; include('mobile_top_nav.php') ?>
         <div class="slide-shader"></div>
-        <div class="slide-content" style="text-align: center">
-            <p style="font-weight: bold; font-size: 56px; color: white;">WELCOME</p>
+        <div class="slide-content" style="text-align: center; z-index: 20">
+            <br>
+            <br>
+            <span style="font-weight: bold; font-size: 50px; background: #ffffff; margin-top:0; padding: 0px 50px; border: solid #000000 4px;">WELCOME</span>
+            <p style="margin-top: 10px; font-style: italic;">CJ BRASSINGTON FULL STACK DEVELOPER</p>
+
+
         </div>
     </div>
 
@@ -109,15 +114,16 @@
                 Work Experience
             </p>
             <p>
-                Has a developer, most of my experience has been in wev development. I graduated from UBC in 2013 with a
+                As a developer, most of my experience has been in wev development. I graduated from UBC in 2013 with a
                 combined major in Computer Science and Physics. I got my first (developer) job in the fall of 2013, and
                 have been working as a web dev since. I am comfortable in the full stack, though the backend is where I am most
                 at home.
             </p>
             <p>
-                The languages I have the most experience
-                working with are PHP, MySQL, and javascript. I also have worked a lot with basic html, and css.
-                I am a fast learner when it come to new languages, and often find myself enjoying learning what the new technologies have to offer.
+                I have worked with many language throughout school and work, however the languages I have the most experience
+                working with are PHP, MySQL, and javascript (as well as all the html and css that goes with it). I am a
+                fast learner when it come to new languages, and often find myself enjoying learning what the new
+                technologies have to offer.
             </p>
             <p>
                 Scroll left or right for details on my work experience
@@ -152,8 +158,8 @@
                 </li>
 
                 <li>
-                    Took ownership of multiple projects, and had a wider array of responsibilites
-                    due to the small business enviroment.
+                    Took ownership of multiple projects, and had a wider array of responsibilities
+                    due to the small business environment.
                 </li>
 
             </ul>
