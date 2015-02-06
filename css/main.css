@@ -134,6 +134,9 @@ p, ul, li, div{
 .project-link{
     font-weight: bold;
 }
+.project-link:hover{
+    color: #ffffff;
+}
 
 #mobile-button, #desktop-button{
     cursor: pointer;
