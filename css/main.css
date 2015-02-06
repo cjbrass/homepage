@@ -1,10 +1,10 @@
 @font-face {
-    font-family: 'raavi';
-    src: url(fonts/raavi.ttf);
+    font-family: 'corbel';
+    src: url(fonts/Corbel_11902.ttf);
 }
 
 body{
-    font-family: 'raavi';
+    font-family: 'corbel';
     background-color: #ffffff;
     font-size: 20px;
     margin: 0;
