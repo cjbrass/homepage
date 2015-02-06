@@ -3,7 +3,7 @@
 // Currently you have to define all these, may look into automating that in the future
 var column_counter = 0;
 var row_counters = [0,0,0,0,0];
-var row_maxs = [0,0,3,0,7];
+var row_maxs = [0,0,0,3,7];
 var scrolling_allowed = true;
 var row_colours = ['#FFFFFF','#FFFFFF', '#AFEEEE', '#98FB98','#D3D3D3'];
 
@@ -36,8 +36,9 @@ function scrollRight(){
 
     var current_slide = '#slide-' + column_counter + "-"+row_counters[column_counter];
 
-    if(column_counter >= row_counters.length -1 || !scrolling_allowed){
-        return;
+    if(!scrolling_allowed) return;
+    if(column_counter >= row_counters.length -1){
+        column_counter = -1;
     }
     column_counter ++;
 
@@ -51,8 +52,9 @@ function scrollRight(){
 function scrollLeft(){
     var current_slide = '#slide-' + column_counter + "-"+row_counters[column_counter];
 
-    if(column_counter <= 0 || !scrolling_allowed){
-        return;
+    if(!scrolling_allowed) return;
+    if(column_counter <= 0){
+        column_counter = row_counters.length;
     }
     column_counter --;
 

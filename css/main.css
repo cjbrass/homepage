@@ -3,8 +3,12 @@
     src: url(fonts/Corbel_11902.ttf);
 }
 @font-face {
-    font-family: 'orator';
+    font-family: 'orator-slanted';
     src: url(fonts/OratorStd-Slanted.otf);
+}
+@font-face {
+    font-family: 'orator';
+    src: url(fonts/OratorStd.otf);
 }
 
 body{
@@ -67,12 +71,15 @@ p, ul, li, div{
     text-align: center;
 }
 .nav-bar{
-    font-family: 'orator';
+    font-family: 'orator-slanted';
     display: inline-block;
     width: 500px;
 }
 .nav{
     background-color: #ffffff;
+    border-bottom: 2px #000000 solid;
+    border-left: 2px #000000 solid;
+    border-right: 2px #000000 solid;
 }
 .mobile-nav-container{
     display: none;
@@ -146,9 +153,17 @@ p, ul, li, div{
 }
 
 .sub-title{
+    font-family: 'orator';
+    display: inline-block;
+    background-color: #ffffff;
+    padding: 7px 20px;
     text-align: center;
     font-weight: bold;
-    font-size: 32px;
+    font-size: 26px;
+    line-height: .8;
+}
+.sub-title-dates{
+    font-size: 20px;
 }
 .about-image-container{
     margin-top: 20px;
