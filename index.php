@@ -86,7 +86,7 @@
 
             <p>
                 Hi my name is CJ, and I am a full stack developer who decided to make a website of my own to help showcase my skills.
-                I have put together what I am hoping is an engaging portfolio. Here you will read about my work experience. hobbies, and personal projects.
+                I have put together what I am hoping is an engaging portfolio. Here you will read about my work experience, hobbies, and personal projects.
                 I want to shine a little light on how I live my life. This site has no particular focus. I want to display what I do professionally,
                 while also showing a bit
                 of my personality and have some fun with it.
@@ -114,13 +114,13 @@
                 Work Experience
             </p>
             <p>
-                As a developer, most of my experience has been in wev development. I graduated from UBC in 2013 with a
+                As a developer, most of my experience has been in web development. I graduated from UBC in 2013 with a
                 combined major in Computer Science and Physics. I got my first (developer) job in the fall of 2013, and
                 have been working as a web dev since. I am comfortable in the full stack, though the backend is where I am most
                 at home.
             </p>
             <p>
-                I have worked with many language throughout school and work, however the languages I have the most experience
+                I have worked with many languages throughout school and work, however the languages I have the most experience
                 working with are PHP, MySQL, and javascript (as well as all the html and css that goes with it). I am a
                 fast learner when it come to new languages, and often find myself enjoying learning what the new
                 technologies have to offer.
@@ -144,10 +144,10 @@
             </p>
             <ul>
                 <li>
-                    Manage all aspects of the building and maintenance of the web portals
+                    Manage all aspects of the building and maintenance of the web portals.
                 </li>
                 <li>
-                    Met tight deadlines while managing several projects, forcing effectiveness and organization
+                    Met tight deadlines while managing several projects, forcing effectiveness and organization.
                 </li>
                 <li>
                     Worked independently, and in small teams.
@@ -182,27 +182,27 @@
             <ul>
                 <li>
                     Began working as a QA Analyst to help with a backlog of work. Worked on functional and automated
-                    testing plans to verify customer acceptance and stability using Selenium/Capybara in Ruby
+                    testing plans to verify customer acceptance and stability using Selenium/Capybara in Ruby.
                 </li>
                 <li>
                     Moved quickly into a programming position as one of two key developers on Aquila. Tool set was Yii
-                    (PHP with MySQL) and Backbone (javascript)
+                    (PHP with MySQL) and Backbone (javascript).
                 </li>
                 <li>
                     Experimented with using Raspberry Pi as a suitable display driver for our data visualization kiosks
                     we were producing for customers - research led to a decision and recommendation that this was not
-                    the right tool for the job. I was able to summarize the pros and cons and present alternatives to Management.
+                    the right tool for the job. I was able to summarize the pros and cons and present alternatives to management.
                 </li>
                 <li>
                     Worked as part of a team on the Aquila project involving a lead engineer, designer, QA, and customer
                     support. Experienced at self organizing my time to support their priorities to deliver to the client on time.
                 </li>
                 <li>
-                    Worked extensively with GitHub, Atlassian JIRA, PHP Storm, HipChat, Slack
+                    Worked extensively with GitHub, Atlassian JIRA, PHP Storm, HipChat, Slack.
                 </li>
                 <li>
                     Enjoyed the entrepreneurial yet business minded environment of the company. Participated and
-                    contributed to strategy and planning discussions. Would like to have stayed at Stage 3 but the
+                    contributed to strategy and planning discussions. Would like to have stayed at Stage 3, but the
                     business did a head count reduction as part of another project scaling back. I've supported them
                     closely through the transition.
                 </li>
@@ -257,6 +257,13 @@
 
 
             </p>
+            <p>
+                <a class="project-link" href="https://github.com/cjbrass/Physics-Simulator">Physics Particle Simulator:</a>
+                My favorite project from UBC. Written in C++, and using openGL and GLUT. We (myself and a partner) wrote
+                a simulator that manages gravity, electromagnetism, and also collisions. All the forces were able to be
+                toggled on an off. After the project was finished, I ported it to my windows computer, and added a few more
+                features to it.
+            </p>
         </div>
     </div>
     <div id="slide-4-0" class="slide">
@@ -307,10 +314,10 @@
             </div>
             <p>
                 When a potentially diseased monkey tries to steal your water bottle, the smart thing to do is give up
-                the (even in 35&#176;C and 100% humidity).
+                the bottle (even in 35&#176;C and 100% humidity).
                 It would be great if I always did the smart thing right away, but that is not always the case.
 
-                I eventually smartened up and admitted defeat. As much as I dislike making poor decisions,
+                I eventually wised up and admitted defeat. As much as I dislike making poor decisions,
                 it is quite satisfying when I recognize something is wrong, and fix it. Times like that also help me
                 empathize with people when they may not be at their best.
             </p>
