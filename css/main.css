@@ -49,9 +49,12 @@ p, ul, li, div{
 .nav-bar{
     display: inline-block;
     width: 500px;
+    border-bottom: 2px solid #000000;
+    border-left: 2px solid #000000;
+    border-right: 2px solid #000000;
 }
 .nav{
-    background-color: gray;
+    background-color: white;
 }
 .mobile-nav-container{
     display: none;
@@ -67,7 +70,7 @@ p, ul, li, div{
 }
 .nav-button{
     cursor: pointer;
-    color: #ffffff;
+    color: #000000;
     padding-right: 3px;
     padding-left: 3px;
 }

@@ -34,7 +34,6 @@
             <a class="nav-button" data-panel-num="3">Projects</a>
             <a class="nav-button" data-panel-num="4">About</a>
         </div>
-        <div class="bottom-slant"></div>
     </div>
 
 </div>
@@ -67,11 +66,11 @@
     <div id="slide-0-0" class="slide">
         <?php $slide = 0; include('mobile_top_nav.php') ?>
         <div class="slide-shader"></div>
-        <div class="slide-content" style="text-align: center; z-index: 20">
+        <div class="slide-content" style="text-align: center; z-index: 1; position: relative;">
             <br>
             <br>
             <span style="font-weight: bold; font-size: 50px; background: #ffffff; margin-top:0; padding: 0px 50px; border: solid #000000 4px;">WELCOME</span>
-            <p style="margin-top: 10px; font-style: italic;">CJ BRASSINGTON FULL STACK DEVELOPER</p>
+            <p style=" margin-top: 10px; font-style: italic;">CJ BRASSINGTON FULL STACK DEVELOPER</p>
 
 
         </div>
