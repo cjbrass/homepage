@@ -13,7 +13,7 @@
 <!--so apologies if you are unable to view this correctly in IE8, or something similar-->
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, user-scalable=yes" />
+    <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no" />
 
     <script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
     <script src="js/jquery-color-plugin.js" type="text/javascript"></script>
