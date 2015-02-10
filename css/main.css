@@ -133,10 +133,11 @@ p, ul, li, div{
 #sports{
     cursor: pointer;
 }
-.project-link{
+.project-link, .resume-link{
     font-weight: bold;
 }
-.project-link:hover{
+
+.project-link:hover, .resume-link:hover{
     color: #ffffff;
 }
 

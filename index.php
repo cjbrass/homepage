@@ -125,7 +125,13 @@
                 technologies have to offer.
             </p>
             <p>
-                Scroll left or right for details on my work experience
+                Scroll left or right for details on my work experience.
+            </p>
+            <p>
+                For my resume, you can download the
+                <a href="download_resume.php?type=short" target="_blank" class="resume-link"> one page version</a>
+                or the
+                <a href="download_resume.php?type=full" target="_blank" class="resume-link"> full version</a>.
             </p>
         </div>
     </div>
