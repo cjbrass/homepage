@@ -138,6 +138,27 @@
     <div id="slide-2-1" class="slide">
         <div class="slide-content">
             <p class="sub-title" style="margin-bottom: 0">
+                Gumstix
+            </p>
+            <p style="margin-top: 0; text-align: center;">March 2015 - present</p>
+            <p>
+                Gumstix makes and sells small linux computers (about the size of a gum stick),
+                The Engine team takes care of maintenance and feature addition of the internal
+                tools, Geppetto, and the online store.
+
+
+            </p>
+            <p>
+                The internal tools help the business run smoother, aiding inventory management and product creation.
+                Geppetto is a web app that allows customers to build and order custom boards. And the online store
+                is a Magento storefront with some custom tweeks and additions. These are apps are built on a
+                combination of Python Django, PHP Symfony, Backbone js, and Angular js.
+            </p>
+        </div>
+    </div>
+    <div id="slide-2-2" class="slide">
+        <div class="slide-content">
+            <p class="sub-title" style="margin-bottom: 0">
                 Sentis Research
             </p>
             <p style="margin-top: 0; text-align: center;">April 2014 - Feb 2015</p>
@@ -171,7 +192,7 @@
 
         </div>
     </div>
-    <div id="slide-2-2" class="slide">
+    <div id="slide-2-3" class="slide">
         <div class="slide-content">
             <p class="sub-title" style="margin-bottom: 0">
                 Stage 3 Systems
