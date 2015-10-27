@@ -70,7 +70,7 @@
             <br>
             <br>
             <span style="font-weight: bold; font-size: 50px; background: #ffffff; margin-top:0; padding: 0px 50px; border: solid #000000 4px;">WELCOME</span>
-            <p style=" margin-top: 10px; font-style: italic;">CJ BRASSINGTON FULL STACK DEVELOPER</p>
+            <p style=" margin-top: 10px; font-style: italic;">CJ BRASSINGTON SOFTWARE ENGINEER</p>
 
 
         </div>
@@ -84,21 +84,18 @@
             </p>
 
             <p>
-                Hi my name is CJ, and I am a full stack developer who decided to make a website of my own to help showcase my skills.
-                I have put together what I am hoping is an engaging portfolio. Here you will read about my work experience, hobbies, and personal projects.
+                Hi my name is CJ, and I am a web developer who decided to make a website of my own to help showcase my skills.
+                I have put together what I am hoping is simple yet engaging portfolio. Here you will read about my work experience, hobbies, and personal projects.
                 I want to shine a little light on how I live my life. This site has no particular focus. I want to display what I do professionally,
                 while also showing a bit
                 of my personality and have some fun with it.
-
-
             </p>
 
             <p>
-                Just a reminder: this site is still under construction. I have done some testing, and feel like it is close to
-                a finished product, but some small errors could still be present. So go ahead and explore.
-                If you break things, I promise I won't get mad.
                 You can navigate the site with your arrow keys,
                 your scroll wheel, or the menu at the top.
+                So go ahead and explore.
+                If you break things, I promise I won't get mad.
             </p>
 
         </div>
@@ -120,7 +117,7 @@
             </p>
             <p>
                 I have worked with many languages throughout school and work, however the languages I have the most experience
-                working with are PHP, MySQL, and javascript (as well as all the html and css that goes with it). I am a
+                working with are Python, PHP, MySQL, and javascript (as well as all the html and css that goes with it). I am a
                 fast learner when it come to new languages, and often find myself enjoying learning what the new
                 technologies have to offer.
             </p>
@@ -132,6 +129,7 @@
                 <a href="download_resume.php?type=short" target="_blank" class="resume-link"> one page version</a>
                 or the
                 <a href="download_resume.php?type=full" target="_blank" class="resume-link"> full version</a>.
+                You can also find my <a href="https://au.linkedin.com/in/cjbrass" target="_blank" class="resume-link"> LinkedIn here </a>
             </p>
         </div>
     </div>
@@ -140,19 +138,28 @@
             <p class="sub-title" style="margin-bottom: 0">
                 Gumstix
             </p>
-            <p style="margin-top: 0; text-align: center;">March 2015 - present</p>
+            <p style="margin-top: 0; text-align: center;">March 2015 - December 2015</p>
+
             <p>
-                Gumstix makes and sells small linux computers (about the size of a gum stick),
-                The Engine team takes care of maintenance and feature addition of the internal
-                tools, Geppetto, and the online store.
+                Gumstix (<a href="https://www.gumstix.com/" target="_blank">www.gumstix.com</a>)
+                makes and sells small linux computers (about the size of a gum stick), and
+                Geppetto (<a href="https://geppetto.gumstix.com/" target="_blank">geppetto.gumstix.com</a>)
+                allows customers to design and order custom boards with ease.
+                Geppetto also has an internal desktop app used by the engineers to design the components used in Geppetto.
+                My main role at Gumstix has been to handle all things Geppetto, with the occasional
+                day or two spent improving the internal tools.
+            </p>
 
-
+            <p>
+                The customer facing web app is a javascript app built on backbone.js. The internal desktop app is an
+                angular.js front end with python websocket middleware. Both use the same Django server as their back end.
+                I spend about equal time on feature addition, bug fixes, and refactoring/speed ups on all three aspects
+                of Geppetto.
             </p>
             <p>
-                The internal tools help the business run smoother, aiding inventory management and product creation.
-                Geppetto is a web app that allows customers to build and order custom boards. And the online store
-                is a Magento storefront with some custom tweeks and additions. These are apps are built on a
-                combination of Python Django, PHP Symfony, Backbone js, and Angular js.
+                There are three other projects I will help with from time to time: the inventory management app,
+                the product creation and curation app, and the storefront itself. These are all in PHP, with the first two
+                using Symfony, and the storefront using Magento.
             </p>
         </div>
     </div>
@@ -235,7 +242,7 @@
             </ul>
         </div>
     </div>
-    <div id="slide-2-3" class="slide">
+    <div id="slide-2-4" class="slide">
         <div class="slide-content">
             <p class="sub-title">
                 University of British Columbia
@@ -262,26 +269,32 @@
                 Personal Projects
             </p>
             <p>
-                When I have the time I work on personal projects. These can vary from 1-2 hours of tinkering with
-                code to projects spanning over several days or weeks.
-                You can find links to the github repositories here, and sometimes even a working version.
+                99% of the code I write is done at work. However, every once in a while I get to work on personal
+                projects. These can vary from 1-2 hours of tinkering to projects spanning over several days or weeks.
+
+                I like to keep these projects simple and focused, as the main goal is usually just to solve a problem.
+                Lastly, these projects are not shining examples of my best work. I like to think they do some cool things,
+                but as I look at the actual code I can't help but chuckle at what I was writing even just 9 months ago. If
+                you are interested in seeing what I can do professionally, the best way is to just contact me.
+
+                Anyway, you can find links to the github repositories here, and sometimes even a working version.
             </p>
             <p>
                 <a class="project-link" href="https://github.com/cjbrass/Sandbox" target="_blank">The Sandbox:</a> This
                 is where I will do my best to place my waste of time projects. Things
-                like best practices and coding standards will rarely be followed, and the projects will likely never be polished, if ever finished.
+                like best practices and coding standards will rarely be followed, and the projects will likely never be
+                polished, if ever finished.
             </p>
             <p>
-                <a class="project-link" href="https://github.com/cjbrass/homepage" target="_blank">This page:</a> Want to see what is under the hood for this page? Technically you already have access to everything,
-                since its all client side, but hey, here is a nice repo link for you.
+                <a class="project-link" href="https://github.com/cjbrass/homepage" target="_blank">This page:</a>
+                Want to see what is under the hood for this page? Technically you already have access to everything,
+                since its all client side and non uglified/minified, but hey, here is a nice repo link for you.
             </p>
             <p>
                 <a class="project-link" href="https://www.youtube.com/watch?v=NhHrw-t3mwk" target="_blank">Sound finding car</a> and
                 <a class="project-link" href="https://www.youtube.com/watch?v=lNB6J7EirZc" target="_blank">a wave animator:</a>
                 A few of my more memorable projects from university.
                 The source code for them is either lost, or far too trivial to be worth posting, but the results are interesting.
-
-
             </p>
             <p>
                 <a class="project-link" href="https://github.com/cjbrass/Physics-Simulator">Physics Particle Simulator:</a>
@@ -329,10 +342,12 @@
             <p>
                 Aussie Rules Football (AFL) is a ridiculous game that makes no sense, but it sure is fun to play. It is also my new
                 sport of choice. While I still play lots of <span id="sports">[insert sport here]</span>, AFL is the only
-                organized/non-pickup game for me right now.
+                organized/non-pickup game for me right now. I have even had the honor of representing Canada in the last
+                two US vs Canada parallel cup games!
             </p>
         </div>
     </div>
+
     <div id="slide-4-3" class="slide">
         <div class="slide-content">
             <div class="about-image-container">
